@@ -24,13 +24,13 @@ enum CatalogItem: String, Identifiable, Hashable {
   case slider
   case stepper
   case localization
-  case verbatim
   case date
   case timer
   case font
   case styling
   case textLayout
   case voiceover
+  case numberFormat
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -50,26 +50,19 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .picker: return "arrow.up.and.down.text.horizontal"
     case .slider: return "slider.horizontal.3"
     case .stepper: return "plusminus"
-    case .verbatim: return "square.and.pencil"
     case .date: return "calendar"
     case .timer: return "clock"
     case .font: return "abc"
     case .styling: return "paintbrush.pointed"
     case .textLayout: return "character.textbox"
     case .voiceover: return "speaker"
+    case .numberFormat: return "textformat.123"
     
     }
   }
 }
 
 extension String {
-  func camelCaseToWords() -> String {
-    return unicodeScalars.dropFirst().reduce(String(prefix(1))) {
-      return CharacterSet.uppercaseLetters.contains($1)
-        ? $0 + " " + String($1)
-        : $0 + String($1)
-    }
-  }
   func titleCase() -> String {
     return self
       .replacingOccurrences(of: "([A-Z])",

@@ -16,10 +16,12 @@ func getCatalogList(for catalogItem: CatalogItem) -> CatalogList? {
 }
 
 @ViewBuilder
-func getCatalogContent(for title: String) -> some View {
-  switch title {
-  case "Localization": LocalizationView()
-  default: Text(title)
+func getCatalogContent(for item: CatalogItem) -> some View {
+  switch item {
+  case .localization: TextLocalizationView()
+  case .date: TextDateView()
+  case .numberFormat: NumberFormatView()
+  default: EmptyView()
   }
 }
 
@@ -27,6 +29,7 @@ let masterCatalog: CatalogList = [
   "View Elements" :  [ .text, .image, .label, .textInput, .button, .shape, .toggle, .link, .progressView, .picker, .slider, .stepper ]
 ]
 let textCatalog: CatalogList = [
-  "Initializing Text" :  [ .localization
-   ],
+  "Initializing Text" :  [ .localization, .date, .numberFormat],
+  "Appearance" : [.font, .styling, .textLayout],
+  "Accessibility" : [.voiceover]
 ]

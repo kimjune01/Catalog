@@ -12,7 +12,6 @@ struct CatalogListView: View {
   }
   
   var body: some View {
-    Text(title).bold()
     List {
       ForEach(keys, id: \.self) { key in
         Section(header: Text(key)) {
@@ -24,11 +23,12 @@ struct CatalogListView: View {
         }
       }
     }
+    .navigationTitle(title)
     .navigationDestination(for: CatalogItem.self) { item in
       if let list = getCatalogList(for:item) {
         CatalogListView(title: item.title(), catalogList: list)
       } else {
-        getCatalogContent(for: item.title())
+        getCatalogContent(for: item)
       }
     }
   }
