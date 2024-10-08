@@ -9,11 +9,11 @@ import SwiftUI
 
 
 struct ContentView: View {
-    var body: some View {
-      NavigationStack {
-          MasterCatalog().navigationTitle("")
-      }
+  var body: some View {
+    NavigationStack {
+      CatalogListView(title: "Swifty Catalog", catalogList: masterCatalog).navigationTitle("")
     }
+  }
 }
 
 #Preview {

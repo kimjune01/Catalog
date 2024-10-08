@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import MarkdownUI
 
 struct TextLocalizationView: View {
-  let markdownText: LocalizedStringKey = 
-  """
-Text("Explore",
-     comment: "The title of the tab bar item that navigates to the Explore screen.")
-"""
-
-    var body: some View {
-      Text(markdownText).padding()
+  var body: some View {
+    Markdown {
+      """
+      ```swift
+      Text("Explore",
+           comment: "The title of the tab bar item that navigates to the Explore screen.")
+      ```
+      """
     }
+    .padding()
+  }
+
 }
 
 #Preview {
