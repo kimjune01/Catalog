@@ -1,6 +1,303 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "->" : {
+
+    },
+    "`resizable` is needed for the image to scale" : {
+
+    },
+    "123456.789" : {
+
+    },
+    "Add comments." : {
+
+    },
+    "Add languages you want to support to app target; make a _Localizable.xcstrings_; add translations." : {
+
+    },
+    "baselineOffset: %lf" : {
+
+    },
+    "black" : {
+
+    },
+    "blue" : {
+
+    },
+    "body" : {
+
+    },
+    "bold" : {
+
+    },
+    "brown" : {
+
+    },
+    "By default, SwiftUI will localize the text in your app." : {
+
+    },
+    "callout" : {
+
+    },
+    "caption" : {
+
+    },
+    "caption2" : {
+
+    },
+    "compressed" : {
+
+    },
+    "condensed" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Continue butt" : {
+
+    },
+    "Counting things: " : {
+
+    },
+    "Currency: " : {
+
+    },
+    "cyan" : {
+
+    },
+    "Design: " : {
+
+    },
+    "Displays a welcome message to the user." : {
+
+    },
+    "expanded" : {
+
+    },
+    "fill" : {
+
+    },
+    "Font Width: " : {
+
+    },
+    "footnote" : {
+
+    },
+    "Foreground Styles: " : {
+
+    },
+    "Get the SF Symbols app" : {
+
+    },
+    "gray" : {
+
+    },
+    "green" : {
+
+    },
+    "headline" : {
+
+    },
+    "heavy" : {
+
+    },
+    "If you have a string literal that you don’t want to localize, use the `(verbatim:)` initializer instead." : {
+
+    },
+    "Image from bundle" : {
+
+    },
+    "Image from URL" : {
+
+    },
+    "indigo" : {
+
+    },
+    "Inline Positioning" : {
+
+    },
+    "iosfonts.com" : {
+
+    },
+    "italic" : {
+
+    },
+    "kerning: %lf" : {
+
+    },
+    "largeTitle" : {
+
+    },
+    "light" : {
+
+    },
+    "lineSpacing: %lf" : {
+
+    },
+    "link" : {
+
+    },
+    "List of things: " : {
+
+    },
+    "Measurement: " : {
+
+    },
+    "medium" : {
+
+    },
+    "mint" : {
+
+    },
+    "monospaced" : {
+
+    },
+    "monospacedDigit 123" : {
+
+    },
+    "none" : {
+
+    },
+    "orange" : {
+
+    },
+    "Paragraph Text Alignment" : {
+
+    },
+    "People's names: " : {
+
+    },
+    "Percentage: " : {
+
+    },
+    "pink" : {
+
+    },
+    "placeholder" : {
+
+    },
+    "purple" : {
+
+    },
+    "red" : {
+
+    },
+    "regular" : {
+
+    },
+    "rounded" : {
+
+    },
+    "secondary" : {
+
+    },
+    "semibold" : {
+
+    },
+    "serif" : {
+
+    },
+    "size 12" : {
+
+    },
+    "size 14" : {
+
+    },
+    "size 16" : {
+
+    },
+    "size 18" : {
+
+    },
+    "size 20" : {
+
+    },
+    "Size: " : {
+
+    },
+    "standard" : {
+
+    },
+    "strikethrough" : {
+
+    },
+    "strikethrough dash" : {
+
+    },
+    "strikethrough dot" : {
+
+    },
+    "strikethrough red" : {
+
+    },
+    "Styling: " : {
+
+    },
+    "subheadline" : {
+
+    },
+    "Tap to proceed to the next screen." : {
+
+    },
+    "teal" : {
+
+    },
+    "tertiary" : {
+
+    },
+    "Text alignment" : {
+
+    },
+    "The quick brown fox jumps over the lazy dog" : {
+
+    },
+    "thin" : {
+
+    },
+    "This is an extremely long text string that will never fit even the widest of phones without wrapping" : {
+
+    },
+    "title" : {
+
+    },
+    "title2" : {
+
+    },
+    "title3" : {
+
+    },
+    "Truncation mode" : {
+
+    },
+    "Truncation Mode" : {
+
+    },
+    "ultralight" : {
+
+    },
+    "underline" : {
+
+    },
+    "underline dash" : {
+
+    },
+    "underline dot" : {
+
+    },
+    "underline red" : {
+
+    },
+    "Utility variants: " : {
+
+    },
+    "Weight: " : {
+
+    },
     "Welcome" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -17,6 +314,18 @@
           }
         }
       }
+    },
+    "Welcome message" : {
+
+    },
+    "Welcome to our app!" : {
+
+    },
+    "yellow" : {
+
+    },
+    "You tapped on me ^[%lld time](inflect: true)" : {
+
     }
   },
   "version" : "1.0"

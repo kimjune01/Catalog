@@ -26,11 +26,18 @@ enum CatalogItem: String, Identifiable, Hashable {
   case localization
   case date
   case timer
-  case font
+  case systemFont
+  case fonts
   case styling
-  case textLayout
   case voiceover
   case numberFormat
+  case otherFormat
+  case textPosition
+  case systemImage
+  case createImage
+  case resizeImage
+  case imageOrientation
+  case imageResizingMode
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -52,12 +59,18 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .stepper: return "plusminus"
     case .date: return "calendar"
     case .timer: return "clock"
-    case .font: return "abc"
+    case .systemFont: return "textformat"
+    case .fonts: return "textformat.alt"
     case .styling: return "paintbrush.pointed"
-    case .textLayout: return "character.textbox"
     case .voiceover: return "speaker"
     case .numberFormat: return "textformat.123"
-    
+    case .otherFormat: return "textformat"
+    case .textPosition: return "text.word.spacing"
+    case .createImage: return "photo.circle"
+    case .systemImage: return "desktopcomputer"
+    case .resizeImage: return "viewfinder"
+    case .imageOrientation: return "rotate.left.fill"
+    case .imageResizingMode: return "rectangle.split.3x3.fill"
     }
   }
 }

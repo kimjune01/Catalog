@@ -16,6 +16,10 @@ struct TextDateView: View {
           .block()
         Swifty(code:"Text(Date(), style: .date)")
         Divider()
+        Text(Date(), format: Date.FormatStyle(date: .abbreviated, time: .shortened))
+          .block()
+        Swifty(code: "Text(myDate, format: Date.FormatStyle(date: .abbreviated, time: .shortened))")
+        Divider()
         Text(Date(timeIntervalSinceNow: 300), style: .offset)
           .block()
         Swifty(code:"Text(Date(timeIntervalSinceNow: 300), style: .offset)")
@@ -39,6 +43,7 @@ struct TextDateView: View {
         Text(Date(), format: .dateTime)
           .block()
         Swifty(code: "Text(Date(), format: .dateTime)")
+        
         
       }
     }.padding()
