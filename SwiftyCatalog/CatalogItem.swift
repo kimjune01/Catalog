@@ -14,7 +14,7 @@ enum CatalogItem: String, Identifiable, Hashable {
   case text
   case image
   case label
-  case textInput
+  case textField
   case button
   case shape
   case toggle
@@ -48,7 +48,7 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .text: return "textformat"
     case .image: return "photo"
     case .label: return "text.below.photo"
-    case .textInput: return "character.textbox"
+    case .textField: return "character.textbox"
     case .localization: return "globe"
     case .button: return "rectangle.and.hand.point.up.left"
     case .shape: return "squareshape.fill"

@@ -28,14 +28,15 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .imageEffects: ImageEffectsView()
   case .label: LabelView()
   case .link: LinkView()
-  case .textInput: TextInputView()
+  case .textField: TextFieldView()
+  case .button: ButtonView()
   default: EmptyView()
   }
 }
 
 let masterCatalog: CatalogList = [
   "Display" :  [.text, .image, .label, .shape, .progressView],
-  "Controls" :  [.textInput, .button, .link, .toggle, .picker, .slider, .stepper ]
+  "Controls" :  [.textField, .button, .link, .toggle, .picker, .slider, .stepper ]
 ]
 let textCatalog: CatalogList = [
   "Initializing Text" :  [.localization, .date, .numberFormat, .otherFormat],

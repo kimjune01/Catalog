@@ -13,9 +13,7 @@ struct ImageEffectsView: View {
   @State private var saturation: CGFloat = 1
   @State private var contrast: CGFloat = 1
   @State private var brightness: CGFloat = 0
-  @State private var mHue: CGFloat = 0
-  @State private var mSaturation: CGFloat = 0
-  @State private var mBrightness: CGFloat = 1
+  @State private var mColor = Color(hue: 0, saturation: 0, brightness: 1)
   @State private var blur: CGFloat = 1
   @State private var maskText: String = "MASK"
   @State private var gradientValue = 0.1
@@ -59,7 +57,6 @@ struct ImageEffectsView: View {
         Divider()
         
         Text("Color Multiply").font(.headline)
-        let mColor = Color(hue: mHue, saturation: mSaturation, brightness: mBrightness)
         HStack {
           Image(bigBuckBunny)
             .resizable()
@@ -73,23 +70,7 @@ struct ImageEffectsView: View {
             .stroke(.tertiary, lineWidth: 1)
             .frame(width: 50, height: 50)
         }
-        HStack {
-          Text("Saturation")
-          Slider(value: $mSaturation, in: (0...1))
-        }
-        HStack {
-          Text("Hue")
-          Slider(value: $mHue, in: (0...1))
-        }
-        HStack {
-          Text("Brightness")
-          Slider(value: $mBrightness, in: (0...5))
-        }
-        Button("Reset") {
-          mHue = 0
-          mSaturation = 0
-          mBrightness = 1
-        }
+        ColorPicker("Multiply with Color", selection: $mColor)
         Divider()
         
         Text("Blur").font(.headline)
@@ -123,7 +104,7 @@ struct ImageEffectsView: View {
             .clipShape(RoundedRectangle(cornerRadius: 20.0, style: .continuous))
             .mask(
               ZStack {
-                LinearGradient(gradient: Gradient(colors: [.white, .clear]), startPoint: .init(x: gradientValue - 1, y: gradientValue - 1), endPoint: .init(x: gradientValue * 2, y: 1))
+                LinearGradient(gradient: Gradient(colors: [.white, .clear]), startPoint: .init(x: gradientValue - 1, y: gradientValue - 1), endPoint: .init(x: gradientValue * 2, y: gradientValue))
                 Text(maskText).font(.system(size: 80, weight: .black))
               }
             )
