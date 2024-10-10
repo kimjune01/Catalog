@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ResizeImageView: View {
-  @State private var variableValue: CGFloat = 0
   @State private var resizingMode: Image.ResizingMode = .stretch
   @State private var symbolsApp = "sf-symbols"
   @State private var bigBuckBunny = "bbb-splash"
@@ -53,10 +52,18 @@ struct ResizeImageView: View {
           .block()
         Swifty(code:
         """
+        Omitting .resizable() will prevent scaling
+        """
+        )
+        Divider()
         Image(bigBuckBunny)
-          .frame(width: 200, height: 200)
+          .resizable()
           .aspectRatio(contentMode: .fill)
-          .clipped()
+          .frame(width: 200, height: 200)
+          .block()
+        Swifty(code:
+        """
+        Not cropping spills image outside frame
         """
         )
         Divider()
@@ -72,6 +79,7 @@ struct ResizeImageView: View {
         Image(bigBuckBunny)
           .frame(width: 200, height: 200)
           .aspectRatio(contentMode: .fit)
+        // .fit scales the image in both dimensions
           .clipped()
         """
         )
@@ -81,31 +89,39 @@ struct ResizeImageView: View {
           .resizable()
           .aspectRatio(contentMode: .fill)
           .frame(width: 200, height: 200)
+          .clipped()
           .block()
         Swifty(code:
         """
-        Image(bigBuckBunny)
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-          .frame(width: 200, height: 200)
-        // Not cropping spills outside frame
-        """
-        )
-        Divider()
-        
-        Image(bigBuckBunny)
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-          .frame(width: 200, height: 200)
-          .clipped() // Crop the image to the frame size
-          .block()
-        Swifty(code:
-        """
-        Image(bigBuckBunny)
-          .resizable()
           .aspectRatio(contentMode: .fill)
           .frame(width: 200, height: 200)
           .clipped() // Crop the image to the frame
+        """
+        )
+        Divider()
+
+        Image(bigBuckBunny)
+          .resizable()
+          .aspectRatio(contentMode: .fill)
+          .frame(width: 200, height: 200)
+          .clipShape(Circle())
+          .block()
+        Swifty(code:
+        """
+          .clipShape(Circle()) 
+        """
+        )
+        Divider()
+        
+        Image(bigBuckBunny)
+          .resizable()
+          .aspectRatio(contentMode: .fill)
+          .frame(width: 200, height: 200)
+          .clipShape(RoundedRectangle(cornerRadius: 20.0, style: .continuous))
+          .block()
+        Swifty(code:
+        """
+          .clipShape(RoundedRectangle(cornerRadius: 20.0, style: .continuous))
         """
         )
         Divider()

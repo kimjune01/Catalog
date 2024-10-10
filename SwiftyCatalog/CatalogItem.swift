@@ -36,8 +36,9 @@ enum CatalogItem: String, Identifiable, Hashable {
   case systemImage
   case createImage
   case resizeImage
-  case imageOrientation
   case imageResizingMode
+  case imageEffects
+  case viewTransform
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -69,8 +70,9 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .createImage: return "photo.circle"
     case .systemImage: return "desktopcomputer"
     case .resizeImage: return "viewfinder"
-    case .imageOrientation: return "rotate.left.fill"
+    case .viewTransform: return "rotate.left.fill"
     case .imageResizingMode: return "rectangle.split.3x3.fill"
+    case .imageEffects: return "paintpalette"
     }
   }
 }

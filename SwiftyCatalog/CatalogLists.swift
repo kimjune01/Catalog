@@ -1,9 +1,4 @@
-//
-//  CatalogLists.swift
-//  SwiftyCatalog
-//
-//  Created by June Kim on 2024-10-08.
-//
+
 import SwiftUI
 
 typealias CatalogList = Dictionary<String, [CatalogItem]>
@@ -29,18 +24,28 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .voiceover: TextVoiceoverView()
   case .createImage: CreateImageView()
   case .resizeImage: ResizeImageView()
+  case .systemImage: SystemImageView()
+  case .imageEffects: ImageEffectsView()
+  case .label: LabelView()
+  case .link: LinkView()
+  case .textInput: TextInputView()
   default: EmptyView()
   }
 }
 
 let masterCatalog: CatalogList = [
-  "View Elements" :  [ .text, .image, .label, .textInput, .button, .shape, .toggle, .link, .progressView, .picker, .slider, .stepper ]
+  "Display" :  [.text, .image, .label, .shape, .progressView],
+  "Controls" :  [.textInput, .button, .link, .toggle, .picker, .slider, .stepper ]
 ]
 let textCatalog: CatalogList = [
-  "Initializing Text" :  [ .localization, .date, .numberFormat, .otherFormat],
+  "Initializing Text" :  [.localization, .date, .numberFormat, .otherFormat],
   "Appearance" : [.systemFont, .fonts, .textPosition],
 ]
 let imageCatalog: CatalogList = [
   "New Image": [.createImage, .systemImage],
-  "Configure": [.resizeImage, .imageOrientation, .imageResizingMode],
+  "Configure": [.resizeImage, .imageEffects],
 ]
+let shapeCatalog: CatalogList = [
+  "Shape": []
+  ]
+
