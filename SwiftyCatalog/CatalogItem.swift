@@ -43,6 +43,7 @@ enum CatalogItem: String, Identifiable, Hashable {
   case shapeEffects
   case gradient
   case datePicker
+  case materials
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -79,8 +80,9 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .imageEffects: return "paintpalette"
     case .createShape: return "pencil.and.outline"
     case .shapeEffects: return "paintpalette"
-    case .gradient: return "rainbow"
-    case .datePicker: return "calendar"
+    case .gradient: return "lightspectrum.horizontal"
+    case .datePicker: return "calendar.badge.checkmark"
+    case .materials: return "light.panel"
     }
   }
 }
@@ -125,6 +127,7 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .gradient: GradientView()
   case .viewTransform: ViewTransformView()
   case .datePicker: DatePickerView()
+  case .materials: MaterialsView()
     
   default: EmptyView()
   }
@@ -144,7 +147,7 @@ let imageCatalog: CatalogList = [
 ]
 let shapeCatalog: CatalogList = [
   "Shape": [.createShape, .shapeEffects, .viewTransform],
-  "Color": [.gradient]
+  "Color": [.gradient, .materials]
 ]
 
 extension String {

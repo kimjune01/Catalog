@@ -13,7 +13,7 @@ struct SliderView: View {
   @State private var isEditingTwo = false
 
   @State private var sliderThreeValue: Double = 0.5
-  @State var color: Color = .black
+  @State var color: Color = .purple
   let colors: [Color] = [.red, .green, .yellow, .orange, .purple, .brown, .pink, .cyan, .gray, .black]
   
   var body: some View {

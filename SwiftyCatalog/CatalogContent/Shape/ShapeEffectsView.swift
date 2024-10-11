@@ -111,6 +111,33 @@ struct ShapeEffectsView: View {
         }
         Divider()
         
+        Text("Fill style").font(.headline)
+        HStack(spacing: 20) {
+          VStack {
+            Circle()
+              .fill(TintShapeStyle())
+              .tint(.green)
+              .frame(width: 80, height: 80)
+            Text("Tint Shape")
+              .font(.subheadline)
+          }
+          VStack {
+            Circle()
+              .fill(SelectionShapeStyle())
+              .frame(width: 80, height: 80)
+            Text("Selection Shape")
+              .font(.subheadline)
+          }
+          VStack {
+            Circle()
+              .fill(ImagePaint(image: Image(systemName: "star")))
+              .frame(width: 80, height: 80)
+            Text("ImagePaint")
+              .font(.subheadline)
+          }
+        }
+        Divider()
+
         Text("Dash Phase").font(.headline)
         Circle()
           .stroke(style: .init(lineWidth: 4, dash: [10, 5], dashPhase: dashPhase))
@@ -129,6 +156,7 @@ struct ShapeEffectsView: View {
         Slider(value: $strokeProgress, in: 0...1)
           .padding(.horizontal, 50)
         Divider()
+        
         
       }
     }.padding()
