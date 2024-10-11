@@ -10,6 +10,12 @@
     "`resizable` is needed for the image to scale" : {
 
     },
+    "3D Rotation" : {
+
+    },
+    "3D Rotation angle" : {
+
+    },
     "123456.789" : {
 
     },
@@ -19,13 +25,31 @@
     "Add languages you want to support to app target; make a _Localizable.xcstrings_; add translations." : {
 
     },
+    "Adjust Order" : {
+
+    },
+    "Advanced" : {
+
+    },
+    "Animate Stack" : {
+
+    },
+    "Animations for every symbol" : {
+
+    },
     "baselineOffset: %lf" : {
 
     },
     "black" : {
 
     },
+    "Black" : {
+
+    },
     "blue" : {
+
+    },
+    "Blur" : {
 
     },
     "body" : {
@@ -34,7 +58,37 @@
     "bold" : {
 
     },
+    "Bold" : {
+
+    },
+    "Border highlighting" : {
+
+    },
+    "Bordered" : {
+
+    },
+    "Bordered Prominent" : {
+
+    },
+    "Both" : {
+
+    },
+    "Bounce" : {
+
+    },
+    "Breathe" : {
+
+    },
+    "Brightness" : {
+
+    },
     "brown" : {
+
+    },
+    "Button" : {
+
+    },
+    "Button style" : {
 
     },
     "By default, SwiftUI will localize the text in your app." : {
@@ -43,10 +97,40 @@
     "callout" : {
 
     },
+    "Cancel" : {
+
+    },
+    "Capsule" : {
+
+    },
     "caption" : {
 
     },
     "caption2" : {
+
+    },
+    "Catalog" : {
+
+    },
+    "Check it out!" : {
+
+    },
+    "Checklist style" : {
+
+    },
+    "Choose from over 6000 symbols, complete with colors and animations." : {
+
+    },
+    "Circle" : {
+
+    },
+    "Circle + Fill" : {
+
+    },
+    "Color effects" : {
+
+    },
+    "Color Multiply" : {
 
     },
     "compressed" : {
@@ -61,31 +145,91 @@
     "Continue butt" : {
 
     },
+    "Contrast" : {
+
+    },
+    "Control Size" : {
+
+    },
+    "Cool App" : {
+
+    },
     "Counting things: " : {
+
+    },
+    "Currency formatting" : {
 
     },
     "Currency: " : {
 
     },
+    "Customization on text, icon and background" : {
+
+    },
     "cyan" : {
+
+    },
+    "Date" : {
+
+    },
+    "Date formatting" : {
+
+    },
+    "Default" : {
+
+    },
+    "Default toggle and styling" : {
+
+    },
+    "Delay" : {
+
+    },
+    "Delete" : {
 
     },
     "Design: " : {
 
     },
+    "Destructive role" : {
+
+    },
+    "Disabled" : {
+
+    },
     "Displays a welcome message to the user." : {
+
+    },
+    "Ellipse" : {
+
+    },
+    "Enter your name" : {
+
+    },
+    "Enter your number" : {
 
     },
     "expanded" : {
 
     },
+    "Explore more Symbols" : {
+
+    },
     "fill" : {
+
+    },
+    "Fill" : {
 
     },
     "Font Width: " : {
 
     },
+    "Food Options" : {
+
+    },
     "footnote" : {
+
+    },
+    "Foreground color" : {
 
     },
     "Foreground Styles: " : {
@@ -94,16 +238,37 @@
     "Get the SF Symbols app" : {
 
     },
+    "Gradient" : {
+
+    },
     "gray" : {
 
     },
     "green" : {
 
     },
+    "Happy Birthday" : {
+
+    },
     "headline" : {
 
     },
     "heavy" : {
+
+    },
+    "Heierarchical" : {
+
+    },
+    "Hello, %@!" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Hue rotation" : {
+
+    },
+    "Icon Only" : {
 
     },
     "If you have a string literal that you don’t want to localize, use the `(verbatim:)` initializer instead." : {
@@ -113,6 +278,12 @@
 
     },
     "Image from URL" : {
+
+    },
+    "Indicate continuous states" : {
+
+    },
+    "Indicate discrete states" : {
 
     },
     "indigo" : {
@@ -127,7 +298,16 @@
     "italic" : {
 
     },
+    "Its appearance and behavior can be customized" : {
+
+    },
     "kerning: %lf" : {
+
+    },
+    "Labels combine text and icon" : {
+
+    },
+    "Large" : {
 
     },
     "largeTitle" : {
@@ -142,13 +322,31 @@
     "link" : {
 
     },
+    "Links can navigate" : {
+
+    },
+    "Links point to URLs" : {
+
+    },
     "List of things: " : {
+
+    },
+    "Mask" : {
+
+    },
+    "Mask text" : {
 
     },
     "Measurement: " : {
 
     },
     "medium" : {
+
+    },
+    "Menu" : {
+
+    },
+    "Mini" : {
 
     },
     "mint" : {
@@ -160,13 +358,37 @@
     "monospacedDigit 123" : {
 
     },
+    "Multicolor" : {
+
+    },
+    "Multiply with Color" : {
+
+    },
+    "Next Page" : {
+
+    },
+    "No role" : {
+
+    },
     "none" : {
+
+    },
+    "OK" : {
 
     },
     "orange" : {
 
     },
+    "Order Now" : {
+
+    },
+    "Palette" : {
+
+    },
     "Paragraph Text Alignment" : {
+
+    },
+    "Peekaboo!" : {
 
     },
     "People's names: " : {
@@ -181,7 +403,19 @@
     "placeholder" : {
 
     },
+    "Plain" : {
+
+    },
+    "Price" : {
+
+    },
+    "Pulse" : {
+
+    },
     "purple" : {
+
+    },
+    "Radius" : {
 
     },
     "red" : {
@@ -190,16 +424,55 @@
     "regular" : {
 
     },
+    "Regular" : {
+
+    },
+    "Rename" : {
+
+    },
+    "Reset" : {
+
+    },
+    "Rotate" : {
+
+    },
+    "Rotation" : {
+
+    },
     "rounded" : {
 
     },
+    "Rounded border" : {
+
+    },
+    "Saturation" : {
+
+    },
+    "Scale & Rotation" : {
+
+    },
+    "Search..." : {
+
+    },
     "secondary" : {
+
+    },
+    "Secure field" : {
 
     },
     "semibold" : {
 
     },
     "serif" : {
+
+    },
+    "SF Symbols" : {
+
+    },
+    "Share Links open a share sheet" : {
+
+    },
+    "Share SF Symbols" : {
 
     },
     "size 12" : {
@@ -220,7 +493,16 @@
     "Size: " : {
 
     },
+    "Slash" : {
+
+    },
+    "Small" : {
+
+    },
     "standard" : {
+
+    },
+    "States & Callbacks" : {
 
     },
     "strikethrough" : {
@@ -235,10 +517,34 @@
     "strikethrough red" : {
 
     },
+    "Styles" : {
+
+    },
+    "Styling" : {
+
+    },
     "Styling: " : {
 
     },
     "subheadline" : {
+
+    },
+    "Super Secret Password" : {
+
+    },
+    "Switch style" : {
+
+    },
+    "Symbols can be colorful" : {
+
+    },
+    "Symbols can have font weight" : {
+
+    },
+    "Symbols can have variants" : {
+
+    },
+    "Tap to Favorite" : {
 
     },
     "Tap to proceed to the next screen." : {
@@ -253,16 +559,28 @@
     "Text alignment" : {
 
     },
+    "TextField" : {
+
+    },
     "The quick brown fox jumps over the lazy dog" : {
 
     },
     "thin" : {
 
     },
+    "Thin" : {
+
+    },
     "This is an extremely long text string that will never fit even the widest of phones without wrapping" : {
 
     },
+    "Tinted" : {
+
+    },
     "title" : {
+
+    },
+    "Title Only" : {
 
     },
     "title2" : {
@@ -275,6 +593,9 @@
 
     },
     "Truncation Mode" : {
+
+    },
+    "Try again" : {
 
     },
     "ultralight" : {
@@ -292,7 +613,31 @@
     "underline red" : {
 
     },
+    "Unique animations for some symbols" : {
+
+    },
+    "User Interface" : {
+
+    },
+    "Username" : {
+
+    },
+    "Using a label" : {
+
+    },
     "Utility variants: " : {
+
+    },
+    "Value: %lld" : {
+
+    },
+    "Variable: " : {
+
+    },
+    "Vertical label" : {
+
+    },
+    "View Apple's Terms of Service" : {
 
     },
     "Weight: " : {
@@ -321,10 +666,40 @@
     "Welcome to our app!" : {
 
     },
+    "Wiggle" : {
+
+    },
+    "With a border" : {
+
+    },
+    "With a label" : {
+
+    },
+    "X Anchor" : {
+
+    },
+    "X Axis" : {
+
+    },
+    "X Scale" : {
+
+    },
+    "Y Anchor" : {
+
+    },
+    "Y Axis" : {
+
+    },
+    "Y Scale" : {
+
+    },
     "yellow" : {
 
     },
     "You tapped on me ^[%lld time](inflect: true)" : {
+
+    },
+    "Z Axis" : {
 
     }
   },

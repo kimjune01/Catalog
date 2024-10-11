@@ -16,7 +16,7 @@ enum CatalogItem: String, Identifiable, Hashable {
   case label
   case textField
   case button
-  case shape
+  case shapeAndColor
   case toggle
   case link
   case progressView
@@ -39,6 +39,10 @@ enum CatalogItem: String, Identifiable, Hashable {
   case imageResizingMode
   case imageEffects
   case viewTransform
+  case createShape
+  case shapeEffects
+  case gradient
+  case datePicker
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -51,7 +55,7 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .textField: return "character.textbox"
     case .localization: return "globe"
     case .button: return "rectangle.and.hand.point.up.left"
-    case .shape: return "squareshape.fill"
+    case .shapeAndColor: return "squareshape.fill"
     case .toggle: return "switch.2"
     case .link: return "link"
     case .progressView: return "menubar.dock.rectangle"
@@ -73,9 +77,75 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .viewTransform: return "rotate.left.fill"
     case .imageResizingMode: return "rectangle.split.3x3.fill"
     case .imageEffects: return "paintpalette"
+    case .createShape: return "pencil.and.outline"
+    case .shapeEffects: return "paintpalette"
+    case .gradient: return "rainbow"
+    case .datePicker: return "calendar"
     }
   }
 }
+
+typealias CatalogList = Dictionary<String, [CatalogItem]>
+
+func getCatalogList(for catalogItem: CatalogItem) -> CatalogList? {
+  switch catalogItem {
+  case .text: return textCatalog
+  case .image: return imageCatalog
+  case .shapeAndColor: return shapeCatalog
+  default: return nil
+  }
+}
+
+@ViewBuilder
+func getCatalogContent(for item: CatalogItem) -> some View {
+  switch item {
+  case .localization: TextLocalizationView()
+  case .date: TextDateView()
+  case .numberFormat: NumberFormatView()
+  case .otherFormat: OtherFormatView()
+  case .systemFont: SystemFontView()
+  case .fonts: FontsView()
+  case .textPosition: TextPositionView()
+  case .voiceover: TextVoiceoverView()
+  case .createImage: CreateImageView()
+  case .resizeImage: ResizeImageView()
+  case .systemImage: SystemImageView()
+  case .imageEffects: ImageEffectsView()
+  case .label: LabelView()
+  case .link: LinkView()
+  case .textField: TextFieldView()
+  case .button: ButtonView()
+  case .toggle: ToggleView()
+  case .picker: PickerView()
+  case .slider: SliderView()
+  case .stepper: StepperView()
+  case .progressView: ProgressViewView()
+  case .createShape: CreateShapeView()
+  case .shapeEffects: ShapeEffectsView()
+  case .gradient: GradientView()
+  case .viewTransform: ViewTransformView()
+  case .datePicker: DatePickerView()
+    
+  default: EmptyView()
+  }
+}
+
+let masterCatalog: CatalogList = [
+  "Display" :  [.text, .image, .label, .shapeAndColor],
+  "Controls" :  [.textField, .button, .link, .toggle, .picker, .datePicker, .slider, .stepper, .progressView ]
+]
+let textCatalog: CatalogList = [
+  "Initializing Text" :  [.localization, .date, .numberFormat, .otherFormat],
+  "Appearance" : [.systemFont, .fonts, .textPosition],
+]
+let imageCatalog: CatalogList = [
+  "New Image": [.createImage, .systemImage],
+  "Configure": [.resizeImage, .imageEffects],
+]
+let shapeCatalog: CatalogList = [
+  "Shape": [.createShape, .shapeEffects, .viewTransform],
+  "Color": [.gradient]
+]
 
 extension String {
   func titleCase() -> String {

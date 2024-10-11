@@ -11,7 +11,7 @@ struct LabelView: View {
   var body: some View {
     ScrollView{
       VStack(spacing: 20) {
-        Text("Labels combine text and an icon").font(.headline)
+        Text("Labels combine text and icon").font(.headline)
         Label("Both", systemImage: "paperplane")
           .font(.title)
           .labelStyle(.titleAndIcon)

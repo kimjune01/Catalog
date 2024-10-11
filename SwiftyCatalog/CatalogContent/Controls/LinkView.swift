@@ -17,19 +17,23 @@ struct LinkView: View {
         Link("View Apple's Terms of Service",
              destination: URL(string: "https://www.apple.com/uk/legal/internet-services/itunes/uk/terms.html")!)
         .block()
-        Swifty(code:
-          """
-          Link("View Apple's Terms of Service",
-               destination: URL(string: "https://www.apple.com/uk/legal/internet-services/itunes/uk/terms.html")!)
-          """
-        )
+        Divider()
+        
+        Text("Links can navigate").font(.headline)
+        NavigationView {
+          NavigationLink {
+            Text("Peekaboo!")
+          } label: {
+            Text("Next Page")
+          }
+        }.frame(width: 300, height:200)
+
         Divider()
         
         Text("Share Links open a share sheet").font(.headline)
         ShareLink(item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
-        Divider()
-        
-        Text("Its appearance and behavior can be customized").font(.headline)
+
+        Text("Its appearance and behavior can be customized").font(.subheadline)
         ShareLink(
           item: URL(string: "https://developer.apple.com/sf-symbols/")!,
           subject: Text("Cool App"),
