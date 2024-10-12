@@ -44,6 +44,15 @@ enum CatalogItem: String, Identifiable, Hashable {
   case gradient
   case datePicker
   case materials
+  case map
+  case layout
+  case stacks
+  case scrollView
+  case list
+  case grid
+  case pages
+  case tabs
+  case navigationView
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -72,7 +81,7 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .numberFormat: return "textformat.123"
     case .otherFormat: return "textformat"
     case .textPosition: return "text.word.spacing"
-    case .createImage: return "photo.circle"
+    case .createImage: return "photo"
     case .systemImage: return "desktopcomputer"
     case .resizeImage: return "viewfinder"
     case .viewTransform: return "rotate.left.fill"
@@ -83,6 +92,15 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .gradient: return "lightspectrum.horizontal"
     case .datePicker: return "calendar.badge.checkmark"
     case .materials: return "light.panel"
+    case .map: return "map"
+    case .layout: return "compass.drawing"
+    case .stacks: return "rectangle.stack"
+    case .scrollView: return "scroll"
+    case .list: return "list.bullet"
+    case .grid: return "square.grid.2x2"
+    case .pages: return "book.pages"
+    case .navigationView: return "rectangle.portrait.and.arrow.right.fill"
+    case .tabs: return "inset.filled.bottomthird.rectangle"
     }
   }
 }
@@ -94,6 +112,7 @@ func getCatalogList(for catalogItem: CatalogItem) -> CatalogList? {
   case .text: return textCatalog
   case .image: return imageCatalog
   case .shapeAndColor: return shapeCatalog
+  case .layout: return layoutCatalog
   default: return nil
   }
 }
@@ -128,14 +147,22 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .viewTransform: ViewTransformView()
   case .datePicker: DatePickerView()
   case .materials: MaterialsView()
-    
+  case .map: MapView()
+  case .stacks: StacksView()
+  case .scrollView: ScrollViewView()
+  case .list: ListView()
+  case .pages: PagesView()
+  case .navigationView: NavigationViewView()
+  case .grid: GridView()
+  case .tabs: TabsView()
   default: EmptyView()
   }
 }
 
 let masterCatalog: CatalogList = [
-  "Display" :  [.text, .image, .label, .shapeAndColor],
-  "Controls" :  [.textField, .button, .link, .toggle, .picker, .datePicker, .slider, .stepper, .progressView ]
+  "Display" :  [.text, .image, .label, .shapeAndColor, .layout],
+  "Controls" :  [.textField, .button, .link, .toggle, .picker, .datePicker, .slider, .stepper, .progressView ],
+  "Navigation": [.navigationView, .pages, .tabs]
 ]
 let textCatalog: CatalogList = [
   "Initializing Text" :  [.localization, .date, .numberFormat, .otherFormat],
@@ -149,6 +176,10 @@ let shapeCatalog: CatalogList = [
   "Shape": [.createShape, .shapeEffects, .viewTransform],
   "Color": [.gradient, .materials]
 ]
+let layoutCatalog: CatalogList = [
+  "Composition": [.stacks, .scrollView],
+  "Collection": [.list, .grid]
+]
 
 extension String {
   func titleCase() -> String {
@@ -161,4 +192,3 @@ extension String {
       .capitalized // If input is in llamaCase
   }
 }
-
