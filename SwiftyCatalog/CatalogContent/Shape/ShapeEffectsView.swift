@@ -11,9 +11,13 @@ struct ShapeEffectsView: View {
   @State private var dashPhase: CGFloat = 0
   @State private var strokeProgress: CGFloat = 0.5
 
+  @State private var shadowValue: CGFloat = 10
+  @State private var shadowOffsetValue: CGFloat = 0
+  
   var body: some View {
     ScrollView {
       VStack(spacing: 20) {
+
         Text("Basic effects").font(.headline)
         HStack(spacing: 20) {
           VStack {
@@ -45,6 +49,30 @@ struct ShapeEffectsView: View {
         }
         Divider()
         
+        Text("Shadow effects").font(.headline)
+        HStack(spacing: 20) {
+          VStack {
+            Circle()
+              .foregroundStyle(.secondary)
+              .shadow(radius: shadowValue, x: shadowOffsetValue, y: shadowOffsetValue)
+              .frame(width: 80, height: 80)
+          }
+          VStack {
+            Circle()
+              .foregroundStyle(.selection)
+              .shadow(radius: shadowValue, x: shadowOffsetValue, y: shadowOffsetValue)
+              .frame(width: 80, height: 80)
+          }
+        }
+        HStack {
+          Text("Radius: ").font(.subheadline)
+          Slider(value: $shadowValue, in: 0...50)
+        }
+        HStack {
+          Text("Offset: ").font(.subheadline)
+          Slider(value: $shadowOffsetValue, in: -50...50)
+        }
+        Divider()
         Text("Stroke Style").font(.headline)
         Grid(horizontalSpacing: 20, verticalSpacing: 20) {
           GridRow {

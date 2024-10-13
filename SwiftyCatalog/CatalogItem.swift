@@ -53,6 +53,7 @@ enum CatalogItem: String, Identifiable, Hashable {
   case pages
   case tabs
   case navigationView
+  case gestures
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -101,6 +102,7 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .pages: return "book.pages"
     case .navigationView: return "rectangle.portrait.and.arrow.right.fill"
     case .tabs: return "inset.filled.bottomthird.rectangle"
+    case .gestures: return "hand.draw"
     }
   }
 }
@@ -155,6 +157,7 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .navigationView: NavigationViewView()
   case .grid: GridView()
   case .tabs: TabsView()
+  case .gestures: GesturesView()
   default: EmptyView()
   }
 }
