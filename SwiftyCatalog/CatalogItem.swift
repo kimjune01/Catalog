@@ -54,6 +54,10 @@ enum CatalogItem: String, Identifiable, Hashable {
   case tabs
   case navigationView
   case gestures
+  case popups
+  case alert
+  case modal
+  case actionSheet
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -103,6 +107,10 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .navigationView: return "rectangle.portrait.and.arrow.right.fill"
     case .tabs: return "inset.filled.bottomthird.rectangle"
     case .gestures: return "hand.draw"
+    case .popups: return "party.popper"
+    case .alert: return "exclamationmark.bubble"
+    case .modal: return "rectangle.portrait.on.rectangle.portrait"
+    case .actionSheet: return "inset.filled.bottomhalf.rectangle.portrait"
     }
   }
 }
@@ -158,6 +166,9 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .grid: GridView()
   case .tabs: TabsView()
   case .gestures: GesturesView()
+  case .modal: ModalView()
+  case .alert: AlertView()
+  case .actionSheet: ActionSheetView()
   default: EmptyView()
   }
 }
@@ -182,6 +193,9 @@ let shapeCatalog: CatalogList = [
 let layoutCatalog: CatalogList = [
   "Composition": [.stacks, .scrollView],
   "Collection": [.list, .grid]
+]
+let popupCatalog: CatalogList = [
+  "Popups": [.alert, .modal, .actionSheet],
 ]
 
 extension String {
