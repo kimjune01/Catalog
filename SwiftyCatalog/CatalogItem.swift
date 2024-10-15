@@ -57,10 +57,11 @@ enum CatalogItem: String, Identifiable, Hashable, CaseIterable {
   case popups
   case alert
   case modal
-  case actionSheet
+  case confirmationDialog
   case animation
   case timings
   case transition
+  case characterAnimation
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -112,10 +113,11 @@ enum CatalogItem: String, Identifiable, Hashable, CaseIterable {
     case .popups: return "party.popper"
     case .alert: return "exclamationmark.bubble"
     case .modal: return "rectangle.portrait.on.rectangle.portrait"
-    case .actionSheet: return "inset.filled.bottomhalf.rectangle.portrait"
+    case .confirmationDialog: return "inset.filled.bottomhalf.rectangle.portrait"
     case .animation: return "hands.and.sparkles.fill"
     case .timings: return "stopwatch.fill"
     case .transition: return "drop.transmission"
+    case .characterAnimation: return "character.magnify"
     }
   }
 }
@@ -173,8 +175,9 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .gestures: GesturesView()
   case .modal: ModalView(isBeingPresented: false)
   case .alert: AlertView()
-  case .actionSheet: ActionSheetView()
+  case .confirmationDialog: ConfirmationDialogView()
   case .timings: TimingsView()
+  case .characterAnimation: CharacterAnimationView()
   default: EmptyView()
   }
 }
@@ -201,7 +204,7 @@ let layoutCatalog: CatalogList = [
   "Collection": [.list, .grid]
 ]
 let popupCatalog: CatalogList = [
-  "Popups": [.alert, .modal, .actionSheet],
+  "Popups": [.alert, .modal, .confirmationDialog],
 ]
 let animationCatalog: CatalogList = [
   "Animation": [.timings, .transition],

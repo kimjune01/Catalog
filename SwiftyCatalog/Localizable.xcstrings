@@ -7,7 +7,25 @@
     "->" : {
 
     },
+    ".date" : {
+
+    },
+    ".hourAndMinute" : {
+
+    },
+    ".hourAndMinute, .date" : {
+
+    },
+    "%.2f" : {
+
+    },
+    "%@" : {
+
+    },
     "`resizable` is needed for the image to scale" : {
+
+    },
+    "0" : {
 
     },
     "3D Rotation" : {
@@ -16,7 +34,28 @@
     "3D Rotation angle" : {
 
     },
+    "12" : {
+
+    },
+    "100" : {
+
+    },
     "123456.789" : {
+
+    },
+    "About" : {
+
+    },
+    "About view" : {
+
+    },
+    "Above Labels" : {
+
+    },
+    "Above Roads" : {
+
+    },
+    "Action Sheet" : {
 
     },
     "Add comments." : {
@@ -31,13 +70,40 @@
     "Advanced" : {
 
     },
+    "Alert with long message" : {
+
+    },
+    "Alignment" : {
+
+    },
+    "Alignment: " : {
+
+    },
+    "All grid cells are equal in size, but a cell can be specified to take up more horizontal space (but not vertically)." : {
+
+    },
+    "Angular Gradient" : {
+
+    },
     "Animate Stack" : {
 
     },
     "Animations for every symbol" : {
 
     },
+    "Any shape can be drawn using paths and geometry." : {
+
+    },
+    "Are you sure?" : {
+
+    },
     "baselineOffset: %lf" : {
+
+    },
+    "Basic effects" : {
+
+    },
+    "Basic shapes" : {
 
     },
     "black" : {
@@ -46,10 +112,22 @@
     "Black" : {
 
     },
+    "Blend\nDuration\n" : {
+
+    },
+    "Blend Duration" : {
+
+    },
     "blue" : {
 
     },
     "Blur" : {
+
+    },
+    "Blur Replace" : {
+
+    },
+    "Blurry" : {
 
     },
     "body" : {
@@ -73,7 +151,22 @@
     "Both" : {
 
     },
+    "Both directions scroll" : {
+
+    },
+    "Bottom" : {
+
+    },
+    "Bottom Leading" : {
+
+    },
+    "Bottom Trailing" : {
+
+    },
     "Bounce" : {
+
+    },
+    "Bouncy Spring" : {
 
     },
     "Breathe" : {
@@ -100,6 +193,9 @@
     "Cancel" : {
 
     },
+    "Cancel Subscription" : {
+
+    },
     "Capsule" : {
 
     },
@@ -112,10 +208,25 @@
     "Catalog" : {
 
     },
+    "Cell size" : {
+
+    },
+    "center" : {
+
+    },
+    "Center" : {
+
+    },
+    "Center point: " : {
+
+    },
     "Check it out!" : {
 
     },
     "Checklist style" : {
+
+    },
+    "Cheese" : {
 
     },
     "Choose from over 6000 symbols, complete with colors and animations." : {
@@ -127,10 +238,31 @@
     "Circle + Fill" : {
 
     },
+    "Circular" : {
+
+    },
     "Color effects" : {
 
     },
     "Color Multiply" : {
+
+    },
+    "Colored stepper" : {
+
+    },
+    "Column %lld" : {
+
+    },
+    "Combined Tranition" : {
+
+    },
+    "Compact" : {
+
+    },
+    "Compass" : {
+
+    },
+    "Compass button shows only when rotated" : {
 
     },
     "compressed" : {
@@ -139,10 +271,16 @@
     "condensed" : {
 
     },
+    "Content Transition" : {
+
+    },
     "Continue" : {
 
     },
     "Continue butt" : {
+
+    },
+    "Continuous" : {
 
     },
     "Contrast" : {
@@ -154,6 +292,9 @@
     "Cool App" : {
 
     },
+    "Corner Style" : {
+
+    },
     "Counting things: " : {
 
     },
@@ -163,10 +304,46 @@
     "Currency: " : {
 
     },
+    "Current gesture state" : {
+
+    },
+    "Current value: %lld" : {
+
+    },
+    "Custom Annotation" : {
+
+    },
+    "Custom location details view" : {
+
+    },
+    "Custom shapes" : {
+
+    },
+    "Custom Spring" : {
+
+    },
+    "Custom Styles" : {
+
+    },
     "Customization on text, icon and background" : {
 
     },
     "cyan" : {
+
+    },
+    "Damping\nFraction\n" : {
+
+    },
+    "Damping Fraction" : {
+
+    },
+    "Dark background" : {
+
+    },
+    "Dash" : {
+
+    },
+    "Dash Phase" : {
 
     },
     "Date" : {
@@ -178,6 +355,12 @@
     "Default" : {
 
     },
+    "Default slider" : {
+
+    },
+    "Default stepper" : {
+
+    },
     "Default toggle and styling" : {
 
     },
@@ -187,7 +370,13 @@
     "Delete" : {
 
     },
+    "Delete Something" : {
+
+    },
     "Design: " : {
+
+    },
+    "Destructive" : {
 
     },
     "Destructive role" : {
@@ -196,10 +385,46 @@
     "Disabled" : {
 
     },
+    "Dismiss" : {
+
+    },
+    "Display index" : {
+
+    },
     "Displays a welcome message to the user." : {
 
     },
+    "Duration" : {
+
+    },
+    "Each tab maintains their state independently." : {
+
+    },
+    "Ease In" : {
+
+    },
+    "Ease InOut" : {
+
+    },
+    "Ease Out" : {
+
+    },
+    "Editable List" : {
+
+    },
     "Ellipse" : {
+
+    },
+    "End" : {
+
+    },
+    "End color" : {
+
+    },
+    "End point: " : {
+
+    },
+    "End Radius: " : {
 
     },
     "Enter your name" : {
@@ -208,16 +433,43 @@
     "Enter your number" : {
 
     },
+    "Expand the purple cell" : {
+
+    },
     "expanded" : {
 
     },
     "Explore more Symbols" : {
 
     },
+    "Extra\nBounce\n" : {
+
+    },
+    "extra large" : {
+
+    },
+    "Fade in and out" : {
+
+    },
     "fill" : {
 
     },
     "Fill" : {
+
+    },
+    "Fill style" : {
+
+    },
+    "FlipX" : {
+
+    },
+    "FlipXYZ" : {
+
+    },
+    "FlipY" : {
+
+    },
+    "FlipZ" : {
 
     },
     "Font Width: " : {
@@ -235,16 +487,34 @@
     "Foreground Styles: " : {
 
     },
+    "Gestures available: " : {
+
+    },
+    "Get a 10% discount" : {
+
+    },
     "Get the SF Symbols app" : {
 
     },
+    "Go there" : {
+
+    },
     "Gradient" : {
+
+    },
+    "Graphical" : {
 
     },
     "gray" : {
 
     },
     "green" : {
+
+    },
+    "Grid" : {
+
+    },
+    "Grouped" : {
 
     },
     "Happy Birthday" : {
@@ -259,16 +529,37 @@
     "Heierarchical" : {
 
     },
+    "Hello" : {
+
+    },
     "Hello, %@!" : {
 
     },
-    "Hello, World!" : {
+    "Home view" : {
+
+    },
+    "Home View" : {
+
+    },
+    "Horizontal alignment" : {
+
+    },
+    "Horizontal scroll" : {
+
+    },
+    "Horizontal Stack" : {
 
     },
     "Hue rotation" : {
 
     },
     "Icon Only" : {
+
+    },
+    "If I could only see the scale" : {
+
+    },
+    "If you enjoyed this app, or have suggestions, please send me an email to june@june.kim!" : {
 
     },
     "If you have a string literal that you don’t want to localize, use the `(verbatim:)` initializer instead." : {
@@ -280,6 +571,12 @@
     "Image from URL" : {
 
     },
+    "ImagePaint" : {
+
+    },
+    "Images are not allowed in place of text" : {
+
+    },
     "Indicate continuous states" : {
 
     },
@@ -289,10 +586,25 @@
     "indigo" : {
 
     },
+    "Inline" : {
+
+    },
     "Inline Positioning" : {
 
     },
+    "Inset Grouped" : {
+
+    },
+    "Interactive Spring" : {
+
+    },
     "iosfonts.com" : {
+
+    },
+    "It does not have a header or footer." : {
+
+    },
+    "It's open source on GitHub, so you can copy paste the code, contribute and make it even better." : {
 
     },
     "italic" : {
@@ -307,13 +619,70 @@
     "Labels combine text and icon" : {
 
     },
+    "large" : {
+
+    },
     "Large" : {
 
     },
     "largeTitle" : {
 
     },
+    "Latest gesture" : {
+
+    },
+    "Lazy HStack" : {
+
+    },
+    "Lazy VStack" : {
+
+    },
+    "Leading" : {
+
+    },
+    "Learn more" : {
+
+    },
+    "Let's go somewhere!" : {
+
+    },
     "light" : {
+
+    },
+    "Light background" : {
+
+    },
+    "Limit dates" : {
+
+    },
+    "Limit selection to certain dates" : {
+
+    },
+    "Limit selection to components" : {
+
+    },
+    "Linear" : {
+
+    },
+    "Linear Gradient" : {
+
+    },
+    "lineCap:butt" : {
+
+    },
+    "lineCap:round" : {
+
+    },
+    "lineCap:square" : {
+
+    },
+    "lineJoin:bevel" : {
+
+    },
+    "lineJoin:miter" : {
+
+    },
+    "lineJoin:round" : {
 
     },
     "lineSpacing: %lf" : {
@@ -331,6 +700,12 @@
     "List of things: " : {
 
     },
+    "List Styles" : {
+
+    },
+    "Map Circle" : {
+
+    },
     "Mask" : {
 
     },
@@ -346,6 +721,15 @@
     "Menu" : {
 
     },
+    "Menu (default on iOS)" : {
+
+    },
+    "Mesh Gradient" : {
+
+    },
+    "mini" : {
+
+    },
     "Mini" : {
 
     },
@@ -358,10 +742,34 @@
     "monospacedDigit 123" : {
 
     },
+    "More money" : {
+
+    },
+    "Move" : {
+
+    },
+    "Moving from left then right" : {
+
+    },
+    "Multi-color Gradients" : {
+
+    },
     "Multicolor" : {
 
     },
     "Multiply with Color" : {
+
+    },
+    "Navigation Link" : {
+
+    },
+    "Navigation Title" : {
+
+    },
+    "Navigation views don't have to be full screen." : {
+
+    },
+    "Nested Stack" : {
 
     },
     "Next Page" : {
@@ -373,7 +781,13 @@
     "none" : {
 
     },
+    "Offset: " : {
+
+    },
     "OK" : {
+
+    },
+    "Opacity" : {
 
     },
     "orange" : {
@@ -382,13 +796,25 @@
     "Order Now" : {
 
     },
+    "Other two finger gestures are not available yet." : {
+
+    },
+    "Page Style" : {
+
+    },
     "Palette" : {
 
     },
     "Paragraph Text Alignment" : {
 
     },
+    "Peekaboo" : {
+
+    },
     "Peekaboo!" : {
+
+    },
+    "People" : {
 
     },
     "People's names: " : {
@@ -400,13 +826,25 @@
     "pink" : {
 
     },
+    "Pitch" : {
+
+    },
     "placeholder" : {
 
     },
     "Plain" : {
 
     },
+    "Position" : {
+
+    },
     "Price" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Profile view" : {
 
     },
     "Pulse" : {
@@ -415,10 +853,22 @@
     "purple" : {
 
     },
+    "Radial Gradient" : {
+
+    },
     "Radius" : {
 
     },
+    "Radius: " : {
+
+    },
+    "Rectangle" : {
+
+    },
     "red" : {
+
+    },
+    "Red stroke" : {
 
     },
     "regular" : {
@@ -427,10 +877,19 @@
     "Regular" : {
 
     },
+    "Regular Material" : {
+
+    },
+    "Remind me later" : {
+
+    },
     "Rename" : {
 
     },
     "Reset" : {
+
+    },
+    "Response" : {
 
     },
     "Rotate" : {
@@ -445,10 +904,28 @@
     "Rounded border" : {
 
     },
+    "Rounded Rectangle" : {
+
+    },
+    "Row %lld" : {
+
+    },
     "Saturation" : {
 
     },
+    "Say cheese fondue cheese and wine. Cottage cheese port-salut edam everyone loves port-salut paneer cheese strings babybel. Stilton ricotta lancashire red leicester bocconcini boursin everyone loves parmesan. Mozzarella pecorino emmental fromage brie cheesecake dolcelatte blue castello. Cottage cheese croque monsieur." : {
+
+    },
+    "Scale" : {
+
+    },
     "Scale & Rotation" : {
+
+    },
+    "Scroll on this list to see more." : {
+
+    },
+    "Search for a location" : {
 
     },
     "Search..." : {
@@ -457,7 +934,28 @@
     "secondary" : {
 
     },
+    "Section 0" : {
+
+    },
+    "Section header" : {
+
+    },
+    "Section headers can be customized." : {
+
+    },
+    "Sections can be collapsed and expanded" : {
+
+    },
     "Secure field" : {
+
+    },
+    "Segmented" : {
+
+    },
+    "Select a date" : {
+
+    },
+    "Selection Shape" : {
 
     },
     "semibold" : {
@@ -469,10 +967,22 @@
     "SF Symbols" : {
 
     },
+    "Shadow effects" : {
+
+    },
     "Share Links open a share sheet" : {
 
     },
     "Share SF Symbols" : {
+
+    },
+    "Sheet modal" : {
+
+    },
+    "Show Full screen cover modal" : {
+
+    },
+    "Sidebar" : {
 
     },
     "size 12" : {
@@ -496,10 +1006,40 @@
     "Slash" : {
 
     },
+    "Slide" : {
+
+    },
+    "small" : {
+
+    },
     "Small" : {
 
     },
+    "Smooth Spring" : {
+
+    },
+    "Snappy Spring" : {
+
+    },
+    "Spacing: " : {
+
+    },
+    "Speed" : {
+
+    },
     "standard" : {
+
+    },
+    "Start" : {
+
+    },
+    "Start color" : {
+
+    },
+    "Start point: " : {
+
+    },
+    "Start Radius: " : {
 
     },
     "States & Callbacks" : {
@@ -515,6 +1055,15 @@
 
     },
     "strikethrough red" : {
+
+    },
+    "Stroke & fill" : {
+
+    },
+    "Stroke Style" : {
+
+    },
+    "Stroke trim" : {
 
     },
     "Styles" : {
@@ -544,6 +1093,9 @@
     "Symbols can have variants" : {
 
     },
+    "Tab Bar Style" : {
+
+    },
     "Tap to Favorite" : {
 
     },
@@ -562,7 +1114,28 @@
     "TextField" : {
 
     },
+    "TextField overlay" : {
+
+    },
+    "Thanks to wonderful code examples that inspired this app, such as sarunw.com, and hackingwithswift.com!" : {
+
+    },
+    "The amount of drag applied to the value being animated, as a fraction of an estimate of amount needed to produce critical damping." : {
+
+    },
+    "The duration in seconds over which to interpolate changes to the response value of the spring." : {
+
+    },
     "The quick brown fox jumps over the lazy dog" : {
+
+    },
+    "The stiffness of the spring, defined as an approximate duration in seconds. A value of zero requests an infinitely-stiff spring, suitable for driving interactive animations." : {
+
+    },
+    "The text in alerts cannot be customized." : {
+
+    },
+    "Thick Material" : {
 
     },
     "thin" : {
@@ -571,7 +1144,22 @@
     "Thin" : {
 
     },
+    "Thin Material" : {
+
+    },
+    "This app facilitates efficient communication between designers and engineers in a PDE team. By using the same language to refer to each part of the user experience, designers can specify their vision precisely." : {
+
+    },
+    "This is a plain section." : {
+
+    },
     "This is an extremely long text string that will never fit even the widest of phones without wrapping" : {
+
+    },
+    "This section has a header." : {
+
+    },
+    "Tint Shape" : {
 
     },
     "Tinted" : {
@@ -580,13 +1168,55 @@
     "title" : {
 
     },
+    "Title" : {
+
+    },
+    "Title display mode" : {
+
+    },
+    "Title display mode: " : {
+
+    },
+    "Title Hidden" : {
+
+    },
     "Title Only" : {
+
+    },
+    "Title Visible" : {
 
     },
     "title2" : {
 
     },
     "title3" : {
+
+    },
+    "To and from any direction" : {
+
+    },
+    "Toggle cell" : {
+
+    },
+    "Top" : {
+
+    },
+    "Top Leading" : {
+
+    },
+    "Top Trailing" : {
+
+    },
+    "TopBarLeading" : {
+
+    },
+    "TopBarTrailing" : {
+
+    },
+    "Trailing" : {
+
+    },
+    "Transitions are used to animate views appearing and disappearing" : {
 
     },
     "Truncation mode" : {
@@ -598,7 +1228,16 @@
     "Try again" : {
 
     },
+    "Try gesturing on the shape above" : {
+
+    },
     "ultralight" : {
+
+    },
+    "Ultrathick Material" : {
+
+    },
+    "Ultrathin Material" : {
 
     },
     "underline" : {
@@ -613,10 +1252,25 @@
     "underline red" : {
 
     },
+    "Uneven Rounded Rectangle" : {
+
+    },
     "Unique animations for some symbols" : {
 
     },
+    "Unknown Alignment" : {
+
+    },
+    "Unlike stacks, grids keep both rows and columns aligned." : {
+
+    },
+    "Unsubscribe" : {
+
+    },
     "User Interface" : {
+
+    },
+    "User location" : {
 
     },
     "Username" : {
@@ -634,10 +1288,25 @@
     "Variable: " : {
 
     },
+    "Vertical alignment" : {
+
+    },
     "Vertical label" : {
 
     },
+    "Vertical scroll" : {
+
+    },
+    "Vertical Stack" : {
+
+    },
     "View Apple's Terms of Service" : {
+
+    },
+    "Visibility picker" : {
+
+    },
+    "We are here!" : {
 
     },
     "Weight: " : {
@@ -666,6 +1335,18 @@
     "Welcome to our app!" : {
 
     },
+    "Went to Leading" : {
+
+    },
+    "Went to Trailing" : {
+
+    },
+    "Wheel" : {
+
+    },
+    "Which components" : {
+
+    },
     "Wiggle" : {
 
     },
@@ -673,6 +1354,15 @@
 
     },
     "With a label" : {
+
+    },
+    "With a Label" : {
+
+    },
+    "With a Numeric Value (linear)" : {
+
+    },
+    "With steps and text" : {
 
     },
     "X Anchor" : {
@@ -697,6 +1387,9 @@
 
     },
     "You tapped on me ^[%lld time](inflect: true)" : {
+
+    },
+    "You will stop getting all the benefits of subscribing." : {
 
     },
     "Z Axis" : {

@@ -25,15 +25,18 @@ struct NavigationViewView: View {
               Text("We are here!")
             }
           }
-          .navigationBarItems(leading:
-                                NavigationLink("Leading Bar Item") {
-            Text("Went to Lead").bold()
-          },
-                              trailing:
-                                NavigationLink("Trailing Bar Item") {
-            Text("Went to trail").bold()
-          }
-          )
+          .toolbar(content: {
+            ToolbarItem(placement: .topBarLeading) {
+              NavigationLink(destination: Text("Went to Leading").bold()) {
+                Text("TopBarLeading")
+              }
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+              NavigationLink(destination: Text("Went to Trailing").bold()) {
+                Text("TopBarTrailing")
+              }
+            }
+          })
           .navigationBarTitle(Text("Navigation Title"), displayMode: allDisplayModes[displayModeIdx])
           
         }

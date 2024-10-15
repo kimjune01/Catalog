@@ -15,37 +15,19 @@ struct TabViewView: View {
         VStack(spacing: 20) {
           Text("Tab Bar Style").font(.headline)
           TabView(selection: $selectedIndex) {
-            NavigationStack() {
-              Text("Home View")
-                .navigationTitle("Home")
-              NavigationLink(destination: Text("We're inside")) {
-                Text("Go inside")
-              }
-            }
+            Text("Home View")
             .tabItem {
               Text("Home view")
               Image(systemName: "house.fill")
                 .renderingMode(.template)
             }
             .tag(0)
-            NavigationStack() {
-              Text("Profile view")
-                .navigationTitle("Profile")
-              NavigationLink(destination: Text("Profile detail")) {
-                Text("More detail")
-              }
-            }
+            Text("Profile view")
             .tabItem {
               Label("Profile", systemImage: "person.fill")
             }
             .tag(1)
-            NavigationStack() {
-              Text("About view")
-                .navigationTitle("About")
-              NavigationLink(destination: Text("About detail")) {
-                Text("More about detail")
-              }
-            }
+            Text("About view")
             .tabItem {
               Text("About view")
               Image(systemName: "info.circle")
@@ -61,29 +43,11 @@ struct TabViewView: View {
           
           Text("Page Style").font(.headline)
           TabView(selection: $selectedIndex) {
-            NavigationStack() {
-              Text("Home View")
-                .navigationTitle("Home")
-              NavigationLink(destination: Text("We're inside")) {
-                Text("Go inside")
-              }
-            }
+            Text("Home View")
             .tag(0)
-            NavigationStack() {
-              Text("Profile view")
-                .navigationTitle("Profile")
-              NavigationLink(destination: Text("Profile detail")) {
-                Text("More detail")
-              }
-            }
+            Text("Profile view")
             .tag(1)
-            NavigationStack() {
-              Text("About view")
-                .navigationTitle("About")
-              NavigationLink(destination: Text("About detail")) {
-                Text("More about detail")
-              }
-            }
+            Text("About view")
             .tag(2)
           }
           .tabViewStyle(.page(indexDisplayMode: shouldDisplayIndex ? .always : .never))

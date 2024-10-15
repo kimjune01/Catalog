@@ -17,6 +17,22 @@ struct TransitionView: View {
   let edges: [Edge] = [.bottom, .top, .leading, .trailing]
   
   let stageHeight: CGFloat = 40
+  @State var currencyValue: Double = 0
+  @State private var fillSymbols = false
+  
+  var currencyFormater: NumberFormatter = {
+    var formatter = NumberFormatter()
+    
+    formatter.numberStyle = .currency
+    formatter.currencySymbol = "$"
+    
+    return formatter
+  }()
+  func incrementValue(with amount: Double) {
+    withAnimation {
+      currencyValue += amount
+    }
+  }
   
   var body: some View {
     ScrollView {
@@ -102,6 +118,17 @@ struct TransitionView: View {
         .frame(height: stageHeight)
         Divider()
         
+        Text("Content Transition").font(.headline)
+        Text("\(currencyFormater.string(from: currencyValue as NSNumber)!)")
+          .contentTransition(.numericText(value: currencyValue))
+          .font(.largeTitle)
+          .bold()
+        Button {
+          incrementValue(with: 1.69)
+        } label: {
+          Text("More money")
+        }
+        Divider()
         
       }
     }

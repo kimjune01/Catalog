@@ -11,7 +11,14 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     NavigationStack {
-      CatalogListView(title: "Swifty Catalog", catalogList: masterCatalog).navigationTitle("")
+      CatalogListView(title: "SwiftUI Catalog", catalogList: masterCatalog).navigationTitle("")
+        .toolbar(content: {
+          ToolbarItem(placement: .topBarLeading) {
+            NavigationLink(destination: AboutView()) {
+              Text("About")
+            }
+          }
+        })
     }
   }
 }

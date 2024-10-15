@@ -31,6 +31,9 @@ struct CatalogListView: View {
         getCatalogContent(for: item)
       }
     }
+    .navigationDestination(for: String.self) { _ in
+      // do nothing
+    }
   }
 }
 
