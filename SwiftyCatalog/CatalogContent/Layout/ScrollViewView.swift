@@ -11,32 +11,25 @@ struct ScrollViewView: View {
   
   let squaresCount = 12
   
-  func randomColor() -> Color {
-    return Color(
-      hue: .random(in: 0...1),
-      saturation: .random(in: 0...1),
-      brightness: .random(in: 0...1),
-      opacity: 1)
-  }
   @ViewBuilder
   func makeSquare() -> some View {
     RoundedRectangle(cornerRadius: 12)
       .frame(width: 50, height: 50)
-      .foregroundStyle(randomColor())
+      .foregroundStyle(Color.random())
   }
   
   @ViewBuilder
   func makeWideRect() -> some View {
     RoundedRectangle(cornerRadius: 12)
       .frame(width: 250, height: 50)
-      .foregroundStyle(randomColor())
+      .foregroundStyle(Color.random())
   }
   
   @ViewBuilder
   func makeTallRect() -> some View {
     RoundedRectangle(cornerRadius: 12)
       .frame(width: 50, height: 250)
-      .foregroundStyle(randomColor())
+      .foregroundStyle(Color.random())
   }
   
   var body: some View {

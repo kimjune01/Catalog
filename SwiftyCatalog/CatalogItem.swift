@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-enum CatalogItem: String, Identifiable, Hashable {
+enum CatalogItem: String, Identifiable, Hashable, CaseIterable {
+  
   var id: Self {
     return self
   }
@@ -50,7 +51,6 @@ enum CatalogItem: String, Identifiable, Hashable {
   case scrollView
   case list
   case grid
-  case pages
   case tabs
   case navigationView
   case gestures
@@ -58,6 +58,9 @@ enum CatalogItem: String, Identifiable, Hashable {
   case alert
   case modal
   case actionSheet
+  case animation
+  case timings
+  case transition
   
   func title() -> String {
     return self.rawValue.titleCase()
@@ -103,7 +106,6 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .scrollView: return "scroll"
     case .list: return "list.bullet"
     case .grid: return "square.grid.2x2"
-    case .pages: return "book.pages"
     case .navigationView: return "rectangle.portrait.and.arrow.right.fill"
     case .tabs: return "inset.filled.bottomthird.rectangle"
     case .gestures: return "hand.draw"
@@ -111,6 +113,9 @@ enum CatalogItem: String, Identifiable, Hashable {
     case .alert: return "exclamationmark.bubble"
     case .modal: return "rectangle.portrait.on.rectangle.portrait"
     case .actionSheet: return "inset.filled.bottomhalf.rectangle.portrait"
+    case .animation: return "hands.and.sparkles.fill"
+    case .timings: return "stopwatch.fill"
+    case .transition: return "drop.transmission"
     }
   }
 }
@@ -123,6 +128,7 @@ func getCatalogList(for catalogItem: CatalogItem) -> CatalogList? {
   case .image: return imageCatalog
   case .shapeAndColor: return shapeCatalog
   case .layout: return layoutCatalog
+  case .popups: return popupCatalog
   default: return nil
   }
 }
@@ -161,22 +167,22 @@ func getCatalogContent(for item: CatalogItem) -> some View {
   case .stacks: StacksView()
   case .scrollView: ScrollViewView()
   case .list: ListView()
-  case .pages: PagesView()
   case .navigationView: NavigationViewView()
   case .grid: GridView()
-  case .tabs: TabsView()
+  case .tabs: TabViewView()
   case .gestures: GesturesView()
-  case .modal: ModalView()
+  case .modal: ModalView(isBeingPresented: false)
   case .alert: AlertView()
   case .actionSheet: ActionSheetView()
+  case .timings: TimingsView()
   default: EmptyView()
   }
 }
 
 let masterCatalog: CatalogList = [
-  "Display" :  [.text, .image, .label, .shapeAndColor, .layout],
+  "Display" :  [.text, .image, .label, .shapeAndColor, .animation, .layout],
   "Controls" :  [.textField, .button, .link, .toggle, .picker, .datePicker, .slider, .stepper, .progressView ],
-  "Navigation": [.navigationView, .pages, .tabs]
+  "Navigation": [.navigationView, .tabs, .popups]
 ]
 let textCatalog: CatalogList = [
   "Initializing Text" :  [.localization, .date, .numberFormat, .otherFormat],
@@ -196,6 +202,9 @@ let layoutCatalog: CatalogList = [
 ]
 let popupCatalog: CatalogList = [
   "Popups": [.alert, .modal, .actionSheet],
+]
+let animationCatalog: CatalogList = [
+  "Animation": [.timings, .transition],
 ]
 
 extension String {
